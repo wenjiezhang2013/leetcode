@@ -8,12 +8,14 @@ package op.wjz.leetcode;
  */
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class WordBreak
 {
 	public boolean wordBreak(String s, Set<String> dict)
 	{
+		
 		if(s==null || s.length()==0)
             return true;
         boolean[] res = new boolean[s.length()+1];
@@ -37,14 +39,11 @@ public class WordBreak
 	
 	public static void main(String[] args)
     {
-	    WordBreak wordBreak = new WordBreak();
-	    
-	    Set<String> dict = new HashSet<String>();
-	    dict.add("a");
-	    dict.add("b");
-	    dict.add("d");
-	    dict.add("cd");
-	    
-	    System.err.println(wordBreak.wordBreak("abcd", dict));
+		String s = "123456";
+		
+		for (Character string : s.toCharArray())
+        {
+	        System.err.println(new String(string.toString()));
+        }
     }
 }
