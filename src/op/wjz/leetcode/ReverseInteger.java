@@ -1,6 +1,10 @@
 package op.wjz.leetcode;
 
-
+/**
+ * https://oj.leetcode.com/problems/reverse-integer/
+ * @author wenjiezhang
+ *
+ */
 public class ReverseInteger
 {
 	public int reverseInteger(int value)
