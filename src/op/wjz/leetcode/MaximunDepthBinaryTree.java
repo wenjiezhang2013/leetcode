@@ -23,18 +23,20 @@ public class MaximunDepthBinaryTree
         
         return depth;
     }
-}
-
-// Definition for binary tree
-class TreeNode
-{
-
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x)
+	
+	// Definition for binary tree
+	class TreeNode
 	{
-		val = x;
+
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int x)
+		{
+			val = x;
+		}
 	}
 }
+
+
