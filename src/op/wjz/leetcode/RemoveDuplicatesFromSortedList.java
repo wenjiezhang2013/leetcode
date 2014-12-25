@@ -1,6 +1,5 @@
 package op.wjz.leetcode;
 
-
 /**
  * https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/
  * 
@@ -12,16 +11,21 @@ public class RemoveDuplicatesFromSortedList
 
 	public ListNode deleteDuplicates(ListNode head)
 	{
-		if(head == null || head.next == null)
+		ListNode first = head;
+
+		if (head == null || head.next == null)
 			return head;
-		
-		
-		if(head.val == head.next.val)
+
+		while (head != null && head.next != null)
 		{
-			head.next = head.next.next;
+			if (head.val == head.next.val)
+			{
+				head.next = head.next.next;
+			} else
+				head = head.next;
 		}
-		
-		return deleteDuplicates(head.next);
+
+		return first;
 	}
 
 	class ListNode
