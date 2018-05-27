@@ -3,8 +3,13 @@ package op.wjz.leetcode;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * Least Recently Used
+ * @author wenjiezhang
+ *
+ */
 public class LRUCache {
-	LinkedHashMap<Integer, Integer> cache;
+	public LinkedHashMap<Integer, Integer> cache;
 	int capacity;
 
 	public LRUCache(int capacity) {
